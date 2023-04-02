@@ -5,20 +5,23 @@ body {
   font-size: 32px;
   line-height: 38px;
 }
+a {
+  text-decoration: none;
+}
 
 /* Header */
 .nav-link {
   color: #000000;
 }
 .nav-link:hover {
-  color: #0da68a;
+  color: #bf2626;
 }
 
 .active-nav {
-  color: #0da68a;
+  color: #bf2626;
 }
 .active-nav:hover {
-  color: #0da68a;
+  color: #bf2626;
 }
 
 /* Hero */
@@ -29,4 +32,17 @@ body {
   font-size: 96px;
   line-height: 113px;
   text-align: center;
+}
+
+.list-title {
+  color: #0da68a;
+}
+
+.btn {
+  background-color: #0da68a;
+  border-color: #0da68a;
+}
+.btn:hover {
+  background-color: #bf2626;
+  border-color: #bf2626;
 }
