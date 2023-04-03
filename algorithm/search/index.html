@@ -145,9 +145,10 @@
             </div>
           </section>
           <!-- Linear Search End -->
-          <section id="binary-search-algorithm" class="subject-section">
+          <!-- Binary Search Start -->
+          <section id="linear-search-algorithm" class="border-bottom">
             <h2 class="section-title">Binary Search</h3>
-            <p class="site-paragraph">
+            <p>
               Binary search searches through the data set by dividing the list
               by half then checks the value of the middle element to know if the
               algorithm shouls either retrieve the element, move to the right,
@@ -169,7 +170,7 @@
               </div>
               <div class="vis-extra">
                 <button
-                  class="vis-extra-button"
+                  class="btn"
                   id="binary-vis-extra-button-reset"
                   onclick="BinaryReset()"
                 >
@@ -178,17 +179,14 @@
                 <span>Generate a new set of elements</span>
                 <br />
                 <button
-                  class="vis-extra-button"
+                  class="btn"
                   id="binary-vis-extra-button-previous"
                   onclick="BinaryPrevious()"
                 >
                   Previous
                 </button>
-                <!-- <span id="binary-vis-extra-span-current-step">0</span>
-                            <span>/</span>
-                            <span id="binary-vis-extra-span-total-steps">0</span> -->
                 <button
-                  class="vis-extra-button"
+                  class="btn btn-primary"
                   id="binary-vis-extra-button-next"
                   onclick="BinaryNext()"
                 >
@@ -204,7 +202,7 @@
                   value="35"
                 />
                 <button
-                  class="vis-extra-button"
+                  class="btn"
                   id="binary-vis-extra-button-find"
                   onclick="BinaryUpdate()"
                 >
@@ -212,11 +210,13 @@
                 </button>
                 <span>Update the value the algorithm looks for</span>
               </div>
-              <script src="./BinarySearch/scripts/classes.js"></script>
-              <script src="./BinarySearch/scripts/index.js"></script>
+              <!-- Binary Search Script Start -->
+              <script src="https://cdn.jsdelivr.net/gh/Nikko-Adrian-Pacleb/Algorithm@v1.0.3/Search/BinarySearch/scripts/classes.js"></script>
+              <script src="https://cdn.jsdelivr.net/gh/Nikko-Adrian-Pacleb/Algorithm@1.0.1/Search/BinarySearch/scripts/index.js"></script>
+              <!-- Binary Search Script End -->
             </div>
-            <!-- <p class="site-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illo pariatur qui natus officiis magni culpa vero, sit expedita sapiente sed, nesciunt harum blanditiis temporibus nostrum, libero deleniti. Laborum, aut.</p> -->
           </section>
+          <!-- Binary Search End -->
         </article>
       </main>
     </div>
