@@ -37,3 +37,9 @@ a {
   background-color: #bf2626;
   border-color: #bf2626;
 }
+
+/* Section Title */
+.section-title {
+  font-size: 1.25em;
+  color: #0da68a;
+}

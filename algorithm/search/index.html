@@ -19,6 +19,9 @@
     />
     <link rel="stylesheet" href="./styles/index.css" />
     <!-- Styles End -->
+    <!-- Script Start -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Script End -->
     <title>Search Algorithm</title>
   </head>
   <body>
@@ -45,11 +48,179 @@
       </header>
     </div>
     <!-- Header End -->
-    <!-- List Start -->
+    <!-- Article Start -->
     <div class="container">
-      <h1 class="title">Search Algorithm</h1>
+      <main>
+        <article>
+          <!-- Article Title Start -->
+          <h1 class="border-bottom" style="color: #bf2626; font-size: 2em;">Search Algorithm</h1>
+          <!-- Article Title End -->
+          <!-- Insite Nav Start -->
+          <nav class="border-bottom">
+            <h3>Contents</h3>
+            <ul>
+              <li><a href="#search-algorithm">About Search Algorithm</a></li>
+              <li><a href="#linear-search-algorithm">Linear Search</a></li>
+              <li><a href="#binary-search-algorithm">Binary Search</a></li>
+            </ul>
+          </nav>
+          <!-- Insite Nav End -->
+          <!-- Search Algo Explanation Start -->
+          <section id="search-algorithm" class="border-bottom">
+            <h2 class="section-title">About Search Algorithm</h3>
+            <p>
+              Search algorithms are used to search and retrieve an element from
+              a given data set of any data structure. It is one of the most
+              basic algorithm concept but also one of the most popular and
+              important functionality in a lot of software. Examples of Search
+              algorithm are linear search and binary search
+            </p>
+          </section>
+          <!-- Search Algo Explanation End -->
+          <!-- Linear Search Start -->
+          <section id="linear-search-algorithm" class="border-bottom">
+            <h2 class="section-title">Linear Search</h3>
+            <p>
+              Linear search is the simplest algorithm for search algorithm. The
+              algorithm is designed to look for the element one by one until the
+              element is found or until the end of the data set Since the
+              algorithm run through the whole element, the algorithm's BigO
+              notation is O(n)
+            </p>
+            <div class="vis-container">
+              <div class="vis-svg-container">
+                <svg
+                  id="vis-svg-linear"
+                  width="900"
+                  height="510"
+                  class="vis-svg"
+                ></svg>
+              </div>
+              <div class="vis-extra">
+                <button
+                  class="btn"
+                  id="linear-vis-extra-button-reset"
+                  onclick="LinearReset()"
+                >
+                  Reset
+                </button>
+                <span>Generate a new set of elements</span>
+                <br />
+                <button
+                  class="btn"
+                  id="linear-vis-extra-button-previous"
+                  onclick="LinearPrevious()"
+                >
+                  Previous
+                </button>
+                <button
+                  class="btn btn-primary"
+                  id="linear-vis-extra-button-next"
+                  onclick="LinearNext()"
+                >
+                  Next
+                </button>
+                <br />
+                <input
+                  type="number"
+                  class="vis-extra-input-number"
+                  id="linear-vis-extra-input-find"
+                  min="20"
+                  max="50"
+                  value="35"
+                />
+                <button
+                  class="btn"
+                  id="linear-vis-extra-button-find"
+                  onclick="LinearUpdate()"
+                >
+                  Find
+                </button>
+                <span>Update the value the algorithm looks for</span>
+              </div>
+              <!-- Linear Search Scripts Start -->
+              <script src="https://cdn.jsdelivr.net/gh/Nikko-Adrian-Pacleb/Algorithm/Search/LinearSearch/scripts/classes.js"></script>
+              <script src="https://cdn.jsdelivr.net/gh/Nikko-Adrian-Pacleb/Algorithm/Search/LinearSearch/scripts/index.js"></script>
+              <!-- Linear Search Scripts End -->
+            </div>
+          </section>
+          <!-- Linear Search End -->
+          <section id="binary-search-algorithm" class="subject-section">
+            <h2 class="section-title">Binary Search</h3>
+            <p class="site-paragraph">
+              Binary search searches through the data set by dividing the list
+              by half then checks the value of the middle element to know if the
+              algorithm shouls either retrieve the element, move to the right,
+              or move to the left. Due to the nature of how the algorithm is
+              designed, the algorithm will only work properly if the data set is
+              sorted based on how the Binary Search Algorithm is design(eg. if
+              the binary case decision go to the left if the element the
+              algorithm is trying to look for is smaller, then the data set
+              should be sorted in ascending order)
+            </p>
+            <div class="vis-container">
+              <div class="vis-svg-container">
+                <svg
+                  id="vis-svg-binary"
+                  width="900"
+                  height="510"
+                  class="vis-svg"
+                ></svg>
+              </div>
+              <div class="vis-extra">
+                <button
+                  class="vis-extra-button"
+                  id="binary-vis-extra-button-reset"
+                  onclick="BinaryReset()"
+                >
+                  Reset
+                </button>
+                <span>Generate a new set of elements</span>
+                <br />
+                <button
+                  class="vis-extra-button"
+                  id="binary-vis-extra-button-previous"
+                  onclick="BinaryPrevious()"
+                >
+                  Previous
+                </button>
+                <!-- <span id="binary-vis-extra-span-current-step">0</span>
+                            <span>/</span>
+                            <span id="binary-vis-extra-span-total-steps">0</span> -->
+                <button
+                  class="vis-extra-button"
+                  id="binary-vis-extra-button-next"
+                  onclick="BinaryNext()"
+                >
+                  Next
+                </button>
+                <br />
+                <input
+                  type="number"
+                  class="vis-extra-input-number"
+                  id="binary-vis-extra-input-find"
+                  min="20"
+                  max="50"
+                  value="35"
+                />
+                <button
+                  class="vis-extra-button"
+                  id="binary-vis-extra-button-find"
+                  onclick="BinaryUpdate()"
+                >
+                  Update
+                </button>
+                <span>Update the value the algorithm looks for</span>
+              </div>
+              <script src="./BinarySearch/scripts/classes.js"></script>
+              <script src="./BinarySearch/scripts/index.js"></script>
+            </div>
+            <!-- <p class="site-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illo pariatur qui natus officiis magni culpa vero, sit expedita sapiente sed, nesciunt harum blanditiis temporibus nostrum, libero deleniti. Laborum, aut.</p> -->
+          </section>
+        </article>
+      </main>
     </div>
-    <!-- List End -->
+    <!-- Article End -->
     <!-- Scripts Start -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
