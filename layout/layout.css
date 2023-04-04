@@ -1,0 +1,35 @@
+body {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 38px;
+}
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.nav-link {
+  font-size: 32px;
+  color: #000000;
+}
+.nav-link:hover {
+  color: #bf2626;
+}
+
+.active-nav {
+  color: #bf2626;
+}
+.active-nav:hover {
+  color: #bf2626;
+}
+
+.btn {
+  background-color: #0da68a;
+  border-color: #0da68a;
+}
+.btn:hover {
+  background-color: #bf2626;
+  border-color: #bf2626;
+}
