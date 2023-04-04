@@ -19,6 +19,9 @@
     />
     <link rel="stylesheet" href="./styles/index.css" />
     <!-- Styles End -->
+    <!-- Script Start -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Script End -->
     <title>Sort Algorithm</title>
   </head>
   <body>
@@ -45,6 +48,230 @@
       </header>
     </div>
     <!-- Header End -->
+    <!-- Article Start -->
+    <div class="container">
+      <main>
+        <article>
+          <h1 class="border-bottom" style="color: #bf2626; font-size: 2em">
+            Sort Algorithm
+          </h1>
+          <!-- Insite Nav Start -->
+          <nav class="border-bottom">
+            <h3>Contents</h3>
+            <ul>
+              <li>
+                <a class="insite-nav" href="#sort-algorithm"
+                  >About Sort Algorithm</a
+                >
+              </li>
+              <li>
+                <a class="insite-nav" href="#insertion-sort-algorithm"
+                  >Insertion Sort</a
+                >
+              </li>
+              <li>
+                <a class="insite-nav" href="#selection-sort-algorithm"
+                  >Selection Sort</a
+                >
+              </li>
+              <li>
+                <a class="insite-nav" href="#buble-sort-algorithm"
+                  >Bubble Sort</a
+                >
+              </li>
+              <!-- <li><a class="insite-nav" href="">Merge Sort</a></li> -->
+            </ul>
+          </nav>
+          <!-- Insite Nav End -->
+          <!-- Sort Algo Explanation Start -->
+          <section id="sort-algorithm" class="subject-section">
+            <h2 class="section-title">About Sort Algorithm</h2>
+            <p>
+              Sort Algorithm is a way to reorganize a set of data in a structure
+              that they are in order like alphabetical, greater values, etc.
+            </p>
+          </section>
+          <!-- Sort Algo Explanation End -->
+          <!-- Insertion Sort Start -->
+          <section id="insertion-sort-algorithm" class="border-bottom">
+            <h2 class="section-title">Insertion Sort</h2>
+            <p>
+              Insertion sort works by going through the list from the first to
+              last. In each index we will move the object back until the value
+              before it is lower(or higher depending on sort order) than the
+              index's value. The most common example of Insertion sort is
+              sorting a deck of cards.
+            </p>
+            <div class="vis-container">
+              <div class="vis-svg-container">
+                <svg
+                  id="vis-svg-insertion"
+                  width="900"
+                  height="510"
+                  class="vis-svg"
+                ></svg>
+              </div>
+              <div class="vis-extra">
+                <button
+                  class="btn"
+                  id="insertion-vis-extra-button-reset"
+                  onclick="InsertionReset()"
+                >
+                  Reset
+                </button>
+                <span>Generate a new set of elements</span>
+                <br />
+                <button
+                  class="btn"
+                  id="insertion-vis-extra-button-previous"
+                  onclick="InsertionPrevious()"
+                >
+                  Previous
+                </button>
+                <!-- <span id="linear-vis-extra-span-current-step">0</span>
+                            <span>/</span>
+                            <span id="linear-vis-extra-span-total-steps">0</span> -->
+                <button
+                  class="btn btn-primary"
+                  id="insertion-vis-extra-button-next"
+                  onclick="InsertionNext()"
+                >
+                  Next
+                </button>
+              </div>
+              <!-- Insertion Sort Scripts Start -->
+              <script src="https://cdn.jsdelivr.net/gh/Nikko-Adrian-Pacleb/Algorithm@v1.1.1/Sort/InsertionSort/scripts/classes.js"></script>
+              <script src="https://cdn.jsdelivr.net/gh/Nikko-Adrian-Pacleb/Algorithm@v1.1.1/Sort/InsertionSort/scripts/index.js"></script>
+              <!-- Insertion Sort Scripts End -->
+            </div>
+          </section>
+          <!-- Insertion Sort End -->
+          <!-- Selection Sort Start -->
+          <section id="selection-sort-algorithm" class="border-bottom">
+            <h2 class="section-title">Selection Sort</h2>
+            <p>
+              Selection Sort works by going through the list and look for the
+              smallest(or biggest depending on the sort order) and place them on
+              the start of the list. The algorithm then increase the index of
+              one then start looking and placing the smallest on that index.
+            </p>
+            <div class="vis-container">
+              <div class="vis-svg-container">
+                <svg
+                  id="vis-svg-selection"
+                  width="900"
+                  height="510"
+                  class="vis-svg"
+                ></svg>
+              </div>
+              <div class="vis-extra">
+                <button
+                  class="btn"
+                  id="selection-vis-extra-button-reset"
+                  onclick="SelectionReset()"
+                >
+                  Reset
+                </button>
+                <span>Generate a new set of elements</span>
+                <br />
+                <button
+                  class="btn"
+                  id="selection-vis-extra-button-previous"
+                  onclick="SelectionPrevious()"
+                >
+                  Previous
+                </button>
+                <button
+                  class="btn btn-primary"
+                  id="selection-vis-extra-button-next"
+                  onclick="SelectionNext()"
+                >
+                  Next
+                </button>
+              </div>
+              <!-- Selection Sort Script Start -->
+              <script src="https://cdn.jsdelivr.net/gh/Nikko-Adrian-Pacleb/Algorithm@v1.1.1/Sort/SelectionSort/scripts/classes.js"></script>
+              <script src="https://cdn.jsdelivr.net/gh/Nikko-Adrian-Pacleb/Algorithm@v1.1.1/Sort/SelectionSort/scripts/index.js"></script>
+              <!-- Selection Sort Script End -->
+            </div>
+          </section>
+          <!-- Selection Sort End -->
+          <!-- Bubble Sort Start -->
+          <section id="bubble-sort-algorithm" class="border-bottom">
+            <h3 class="section-title">Bubble Sort</h3>
+            <p>
+              Bubble Sort starts by having two index and compare the value of
+              those two and swap them depending on the sort order. Then after
+              the smalles(or biggest depending on sort order) is on its place,
+              the index then change a space away from that index.
+            </p>
+            <div class="vis-container">
+              <div class="vis-svg-container">
+                <svg
+                  id="vis-svg-bubble"
+                  width="900"
+                  height="510"
+                  class="vis-svg"
+                ></svg>
+              </div>
+              <div class="vis-extra">
+                <button
+                  class="btn"
+                  id="bubble-vis-extra-button-reset"
+                  onclick="BubbleReset()"
+                >
+                  Reset
+                </button>
+                <span>Generate a new set of elements</span>
+                <br />
+                <button
+                  class="btn"
+                  id="bubble-vis-extra-button-previous"
+                  onclick="BubblePrevious()"
+                >
+                  Previous
+                </button>
+                <button
+                  class="btn btn-primary"
+                  id="bubble-vis-extra-button-next"
+                  onclick="BubbleNext()"
+                >
+                  Next
+                </button>
+              </div>
+              <!-- Bubble Sort Script Start -->
+              <script src="https://cdn.jsdelivr.net/gh/Nikko-Adrian-Pacleb/Algorithm@v1.1.1/Sort/BubbleSort/scripts/classes.js"></script>
+              <script src="https://cdn.jsdelivr.net/gh/Nikko-Adrian-Pacleb/Algorithm@v1.1.1/Sort/BubbleSort/scripts/index.js"></script>
+              <!-- Bubble Sort Script End -->
+            </div>
+          </section>
+          <!-- <section id="merge-sort-algorithm" class="subject-section">
+                    <h3 class="section-title">Merge Sort</h3>
+                    <p class="site-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem id eum aspernatur suscipit incidunt accusamus explicabo! Distinctio quo, dolores hic ipsum odio quas non debitis quisquam vitae cumque repellendus optio!</p>
+                    <div class="vis-container">
+                        <div class="vis-svg-container">
+                            <svg id ="vis-svg-merge" width="900" height="510" class="vis-svg">
+
+                            </svg>
+                            
+                        </div><div class="vis-extra">
+                            <button class="vis-extra-button" id="merge-vis-extra-button-reset" onclick="MergeReset()">Reset</button>
+                            <span>Generate a new set of elements</span>
+                            <br>
+                            <button class="vis-extra-button" id="merge-vis-extra-button-previous" onclick="MergePrevious()">Previous</button>
+                            <span id="linear-vis-extra-span-current-step">0</span>
+                            <span>/</span>
+                            <span id="linear-vis-extra-span-total-steps">0</span>
+                            <button class="vis-extra-button" id="merge-vis-extra-button-next" onclick="MergeNext()">Next</button>
+                        </div>
+                            <script src="./LinearSearch/scripts/classes.js"></script>
+                            <script src="./LinearSearch/scripts/index.js"></script>
+                    </div>
+                </section> -->
+        </article>
+      </main>
+    </div>
+    <!-- Article End -->
     <!-- Scripts Start -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
