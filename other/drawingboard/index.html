@@ -17,9 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../../styles/index.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <!-- Styles End -->
+    <!-- Scripts Start -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Scripts End -->
     <title>Other Vizuals</title>
   </head>
   <body>
@@ -28,48 +31,29 @@
     <div class="container">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
         <a
-          href="../index.html"
+          href="../../index.html"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
         >
-          <img src="../images/AlgoVizLogo.svg" alt="AlgoViz Logo" />
+          <img src="../../images/AlgoVizLogo.svg" alt="AlgoViz Logo" />
         </a>
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../../index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="../about/index.html" class="nav-link">About</a>
+            <a href="../../about/index.html" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="../developer/index.html" class="nav-link">Developer</a>
+            <a href="../../developer/index.html" class="nav-link">Developer</a>
           </li>
         </ul>
       </header>
     </div>
     <!-- Header End -->
-    <!-- List Start -->
-    <div class="container visual-list text-center">
-      <h1
-        class="d-block mx-auto mb-4 border-bottom"
-        style="color: #bf2626; font-size: 70px"
-      >
-        Other Vizuals
-      </h1>
-      <ul class="list-group">
-        <li class="list-group-item">
-          <a href="./drawingboard/index.html">
-            <h1 class="list-title">Draw with D3</h1>
-            <p style="color: black">Interactive drawing board with D3</p>
-          </a>
-          <a
-            href="./drawingboard/index.html"
-            class="btn btn-primary stretched-link"
-            >START</a
-          >
-        </li>
-      </ul>
+    <div class="container">
+      <svg id="svg" width="900" height="600"></svg>
+      <script src="./scripts/Pixel.js"></script>
     </div>
-    <!-- List End -->
     <!-- Scripts Start -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
