@@ -27,7 +27,6 @@
   </head>
   <body>
     <!-- Header Start -->
-    <!-- Change image src and href links -->
     <div class="container">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
         <a
@@ -50,16 +49,33 @@
       </header>
     </div>
     <!-- Header End -->
+    <!-- Body Start -->
     <div class="container">
-      <svg id="svg" width="900" height="600"></svg>
-      <script src="./scripts/Pixel.js"></script>
+      <h1 class="text-center">Drawing Board</h1>
+      <div class="svg-container d-flex justify-content-center">
+        <svg id="svg" width="900" height="600"></svg>
+      </div>
+      <p>This Drawing Board is made using D3.</p>
+      <p style="font-size: 12px">
+        (Note that D3 is used instead of p5 because the developer is learning D3
+        and wanted to explore the capabilities of D3)
+      </p>
+      <p>
+        Since D3 uses SVG to create visuals, pixels objects are first created to
+        simulate a canvas. We then place these pixels in their correct
+        locations. Each pixels have OnClick and OnHover functions that allows
+        the mouse click and mouse drag to change the style of the pixel which
+        then simulates drawing.
+      </p>
     </div>
+    <!-- Body End -->
     <!-- Scripts Start -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
+    <script src="./scripts/Pixel.js"></script>
     <script src="./scripts/index.js"></script>
     <!-- Scripts End -->
   </body>
