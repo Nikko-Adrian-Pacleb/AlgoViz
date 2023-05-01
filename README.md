@@ -1,5 +1,5 @@
 # AlgoViz
-Visit Site at <a href="https://nikko-adrian-pacleb.github.io/AlgoViz/" target="_blank">https://nikko-adrian-pacleb.github.io/AlgoViz/</a><br/>
+Visit Site at <a href="https://nikko-adrian-pacleb.github.io/AlgoViz/">https://nikko-adrian-pacleb.github.io/AlgoViz/</a><br/>
 Learning Codes and Algorithms through Visualization made from D3<br>
 
 The page offers visual context on how algorithms work in order for learners to understand algorithms more efficient. <br/>
